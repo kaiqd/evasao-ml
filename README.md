@@ -60,7 +60,7 @@ Ativar:
 -   **CMD**
 
     ``` bash
-    venv\Scriptsctivate
+    venv\Scripts\activate
     ```
 
 ------------------------------------------------------------------------
