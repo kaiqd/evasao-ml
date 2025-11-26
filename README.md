@@ -145,6 +145,10 @@ Predição para múltiplos alunos.
 
 ------------------------------------------------------------------------
 
+# Demonstração
+
+![Banner](./assets/api-doc.png)
+
 # Licença
 
 Livre para uso acadêmico.
