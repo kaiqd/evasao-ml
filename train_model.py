@@ -15,7 +15,7 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 
-# Caminho do CSV (ajuste se o nome for diferente)
+# Caminho do CSV 
 DATA_PATH = "data/alunos.csv"
 MODEL_PATH = "model/logistic_model.pkl"
 
@@ -52,7 +52,7 @@ def main():
     clf = Pipeline(
         steps=[
             ("preprocess", preprocess),
-            ("classifier", LogisticRegression(max_iter=1000)),
+            ("classifier", LogisticRegression(max_iter=2000)),
         ]
     )
 
@@ -82,7 +82,7 @@ def main():
     # 9. Salvar modelo treinado
     os.makedirs("model", exist_ok=True)
     joblib.dump(clf, MODEL_PATH)
-    print(f"\n✅ Modelo salvo em: {MODEL_PATH}")
+    print(f"\nModelo salvo em: {MODEL_PATH}")
 
 
 if __name__ == "__main__":

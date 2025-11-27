@@ -13,7 +13,6 @@ app = FastAPI(
 app.include_router(prediction_view.router)
 
 
-# Opcional: endpoint raiz
 @app.get("/")
 def root():
     return {
